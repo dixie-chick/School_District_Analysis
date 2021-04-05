@@ -17,4 +17,17 @@ Before we can begin these tasks, we need to import the datasets into Jupyter Not
 
 
 Determine data types:
+
 Based on the output, we determined that all of the columns we need to use for calculations are integers. Therefore, we won't need to change the data types for these columns. However, there may be instances in which it's necessary to change the data type. Some CSV and text files, for example, may contain numbers as strings (or objects) rather than integers. These numbers would need to be converted to integers or floats.
+
+
+The school district summary will be a high-level snapshot of the district's key metrics:
+
+Total number of students
+Total number of schools
+Total budget
+Average math score
+Average reading score
+Percentage of students who passed math
+Percentage of students who passed reading
+Overall passing percentage
