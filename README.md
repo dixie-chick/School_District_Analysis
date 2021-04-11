@@ -1,18 +1,29 @@
 # School_District_Analysis
-first development environment project
+pandas environment analysis
 
-## Overview of the school district analysis: Explain the purpose of this analysis.
+## Purpose
 In this analysis, the pandas library in jupyter notebook was used to address seven schools within a district to capture key metrics including the top 5 performing schools and 5 worst performing schools, average math and reading scores, school budgets, and how school size, type and budget affect overall school performance. DataFrames for each output were created for easy visualization. After running this analysis, the school board notified that the completed csv file shows evidence of academic dishonesty, specifically the ninth grade scores for Thomas High School (THS). In order to uphold state-testing standards, the school district analysis was ran again, replacing the math and reading scores for Thomas High to understand how this change affected the overall analysis.
 
 ## Process & Data
 After running the analysis, we can see how each of the seven school district metrics was affected by the changes in the data:
 
-- School summary: In the first analysis, merge() was used to generate a single school data summary based on school name for student_data and school_data
+![school_district_1](https://user-images.githubusercontent.com/79612565/114319759-b58cb900-9ac7-11eb-945b-ffb97c4673b4.png)
+
+
+- **School summary:** In the first analysis, merge() was used to generate a single school data summary based on school name for student_data and school_data
 To solve for the 9th Grade THS scores, np.nan was used to remove their math and reading from the district summary DataFrame:
 
-- District summary: In the first analysis, a snapshot across all schools in the district was created after calculating passing_math, passing_reading and overall_passing count and percentages:
+![school_district_2](https://user-images.githubusercontent.com/79612565/114319768-bcb3c700-9ac7-11eb-86e5-4e52af70bc2f.png)
+
+
+
+- **District summary:** In the first analysis, a snapshot across all schools in the district was created after calculating passing_math, passing_reading and overall_passing count and percentages:
+ ![district_summary_1](https://user-images.githubusercontent.com/79612565/114319771-c1787b00-9ac7-11eb-8d75-1e30fde1a7ba.png)
+
  
-After taking THS 9th grade out of the school summary, we can see the the average scores and percentages increase marginally for the distrcit:
+ After taking THS 9th grade out of the school summary, we can see the the average scores and percentages increase marginally for the distrcit:
+![district_summary_2](https://user-images.githubusercontent.com/79612565/114319778-c5a49880-9ac7-11eb-865d-f4e117072a9b.png)
+
 
 ## Challenges
 Determining data types: all of the columns needed for calucaltions are intergers so any data which contained numbers as strings rather than intergers must be converted using float
