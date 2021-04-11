@@ -7,11 +7,10 @@ In this analysis, the pandas library in jupyter notebook was used to address sev
 ## Process & Data
 After running the analysis, we can see how each of the seven school district metrics was affected by the changes in the data:
 
-![school_district_1](https://user-images.githubusercontent.com/79612565/114319759-b58cb900-9ac7-11eb-945b-ffb97c4673b4.png)
-
-
 - **School summary:** In the first analysis, merge() was used to generate a single school data summary based on school name for student_data and school_data
 To solve for the 9th Grade THS scores, np.nan was used to remove their math and reading from the district summary DataFrame:
+
+![school_district_1](https://user-images.githubusercontent.com/79612565/114319759-b58cb900-9ac7-11eb-945b-ffb97c4673b4.png)
 
 ![school_district_2](https://user-images.githubusercontent.com/79612565/114319768-bcb3c700-9ac7-11eb-86e5-4e52af70bc2f.png)
 
@@ -23,6 +22,10 @@ To solve for the 9th Grade THS scores, np.nan was used to remove their math and 
  
  After taking THS 9th grade out of the school summary, we can see the the average scores and percentages increase marginally for the distrcit:
 ![district_summary_2](https://user-images.githubusercontent.com/79612565/114319778-c5a49880-9ac7-11eb-865d-f4e117072a9b.png)
+
+Removing the THS scores did not affect top performing schools and worse performing schools:
+![top_perform_1](https://user-images.githubusercontent.com/79612565/114320079-1c5ea200-9ac9-11eb-93f6-4c826941b704.png)
+![top_perform_2](https://user-images.githubusercontent.com/79612565/114320081-1e286580-9ac9-11eb-9fe8-047cc1eadbb3.png)
 
 
 ## Challenges
