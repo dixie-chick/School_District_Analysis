@@ -33,9 +33,9 @@ Did Removing the THS scores affect top performing schools and worse performing s
 - **Cleaning Data:** in this anlysis, pre-fixes and suffixes skewed school records and must be removed from student_name. These names cannot be dropped sicne it would affect total student count, negatively impacting the analysis
 
 ## Does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
-To wrap it up, replacing THS 9th grade scores marginally affected the overall district analysis since there is so much data across. Therefore, the school board may still use this analysis to understand test scores, budgeting and overall performance. 
+To wrap it up, replacing THS 9th grade scores marginally affected the overall district analysis since there is so much data across. Replacing these scores did not affect Thomas High School's performance relative to the other schools. Therefore, the school board may still use this analysis to understand test scores, budgeting and overall performance. 
 
-A few changes which are easily apparent are:
+We can view the below to understand the impact on THS within the district:
 
 1. Math and reading scores by grade replaced with NaN
 **Math**
