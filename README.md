@@ -29,48 +29,28 @@ Removing the THS scores did not affect top performing schools and worse performi
 
 
 ## Challenges
-Determining data types: all of the columns needed for calucaltions are intergers so any data which contained numbers as strings rather than intergers must be converted using float
-Missing Data: with such large amounts of data, it's important to address anything missing
-Cleaning Data: in this anlysis, pre-fixes and suffixes skewed school records and must be removed from student_name. These names cannot be dropped sicne it would affect total student count, negatively impacting the analysis
+- **Determining data types:** all of the columns needed for calucaltions are intergers so any data which contained numbers as strings rather than intergers must be converted using float
+- **Missing Data**: with such large amounts of data, it's important to address anything missing
+- **Cleaning Data:** in this anlysis, pre-fixes and suffixes skewed school records and must be removed from student_name. These names cannot be dropped sicne it would affect total student count, negatively impacting the analysis
 
-## To Wrap it Up
-Summary: Summarize four major changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.There is a statement summarizing four major changes to the school district analysis after reading and math scores have been replaced
+## Does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+To wrap it up, replacing THS 9th grade scores marginally affected the overall district analysis since there is so much data across. Therefore, the school board may still use this analysis for testing, budgeting and overall performance. 
+A few changes which are easily apparent are:
 
-Does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
-- Replacing the ninth-grade scores affect the following:
-Math and reading scores by grade
-Scores by school spending
-Scores by school size
-Scores by school type
+1. Math and reading scores by grade replaced with NaN
+**Math**
+![math_grades](https://user-images.githubusercontent.com/79612565/114320562-3a2d0680-9acb-11eb-897a-ee7033ed8b60.png)
 
-removing 9th grade scores did not affect the top schools or bottom performing schools
+**Reading**
+![reading](https://user-images.githubusercontent.com/79612565/114320564-3c8f6080-9acb-11eb-8c95-64e297e25807.png)
 
-Does budget affect top schools?
+2. Scores by school spending: insignificant effect for THS spending bin $630-$644
+3. ![spending](https://user-images.githubusercontent.com/79612565/114321042-ae68a980-9acd-11eb-90aa-d985cb09d570.png)
 
-Here is the list of deliverables for the analysis of the school district: 
+3. Scores by school size: Little effect on school size replacing THS 9th grade
+![size](https://user-images.githubusercontent.com/79612565/114321022-a1e45100-9acd-11eb-9465-45c07259c5ce.png)
 
-A high-level snapshot of the district's key metrics, presented in a table format
-An overview of the key metrics for each school, presented in a table format
-Tables presenting each of the following metrics:
-Top 5 and bottom 5 performing schools, based on the overall passing rate
-The average math score received by students in each grade level at each school
-The average reading score received by students in each grade level at each school
-School performance based on the budget per student
-School performance based on the school size 
-School performance based on the type of school
-Before we can begin these tasks, we need to import the datasets into Jupyter Notebook using Python.
+4. Scores by school type: The Charter schools still rank as the top performing schools
 
+![type](https://user-images.githubusercontent.com/79612565/114321015-9abd4300-9acd-11eb-9667-a9310947ac8b.png)
 
-
-
-
-The school district summary will be a high-level snapshot of the district's key metrics:
-
-Total number of students
-Total number of schools
-Total budget
-Average math score
-Average reading score
-Percentage of students who passed math
-Percentage of students who passed reading
-Overall passing percentage
